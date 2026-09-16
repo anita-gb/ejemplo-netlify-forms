@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscar por nacionalidad</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!-- cuando envío el form, llega el resultado al correo -->
+    <form action="https://formsubmit.co/apgb04@gmail.com" method="post">
+      <label for="">Nacionalidad</label>
+      <select name="pais" id="campo-pais" required>
+        <option value="" disabled selected>Seleccione una opcion</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Argentina">Argentina</option>
+      </select>
+
+      <label for="campo-comentarios">Comentarios</label>
+      <textarea name="comentarios" id="campo-comentarios" placeholder="Ingresa tu mensaje"></textarea>
+
+      <fieldset>
+        <legend>Elige las características de tu monstruo:</legend>
+
+        <div>
+          <input type="checkbox" id="scales" name="scales" checked />
+          <label for="scales">Escamas</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="horns" name="horns" />
+          <label for="horns">Cuernos</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select a maintenance drone:</legend>
+
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey" checked />
+          <label for="huey">Huey</label>
+        </div>
+
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">Dewey</label>
+        </div>
+
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie" />
+          <label for="louie">Louie</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Buscar</button>
+    </form>
+  </body>
+</html>
