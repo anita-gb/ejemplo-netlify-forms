@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- cuando envío el form, llega el resultado al correo -->
-    <form netlify name="ejemplo" method="post">
+    <form netlify name="ejemplo" method="post" action="gracias.html">
       <label for="">Nacionalidad</label>
       <select name="pais" id="campo-pais" required>
         <option value="" disabled selected>Seleccione una opcion</option>
@@ -18,7 +18,11 @@
       </select>
 
       <label for="campo-comentarios">Comentarios</label>
-      <textarea name="comentarios" id="campo-comentarios" placeholder="Ingresa tu mensaje"></textarea>
+      <textarea
+        name="comentarios"
+        id="campo-comentarios"
+        placeholder="Ingresa tu mensaje"
+      ></textarea>
 
       <fieldset>
         <legend>Elige las características de tu monstruo:</legend>
